@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Sign Language</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SenseConnect</h1>
+        <nav>
+            <div class="navbar-icons">
+                <div class="language-selector">
+                    🌐 <select id="language-select" aria-label="Language Selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="hi">हिंदी</option>
+                    </select>
+                </div>
+    
+                <button id="notification-btn" aria-label="Notifications">
+                    🔔
+                </button>
+    
+                <div class="profile-icon">
+                    <span>N</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <main>
+        <section id="about">
+            <div class="about-section">
+                <!-- Our Mission Block -->
+                <div class="about-block">
+                    <div class="text-content">
+                        <h2>Our Mission</h2>
+                        <p>
+                            Our mission is to bridge the gap between hearing and non-hearing communities by providing an inclusive platform for learning sign language. We believe communication should be barrier-free and accessible to everyone.
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <img src="abc.jpg" alt="Our Mission Image">
+                    </div>
+                </div>
+        
+                <!-- Our Story Block -->
+                <div class="about-block">
+                    <div class="text-content">
+                        <h2>Our Story</h2>
+                        <p>
+                            Founded with the vision of inclusivity, we started as a small group of enthusiasts passionate about making sign language accessible. Today, we continue to empower communities through innovative learning solutions.
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <img src="ab.jpeg" alt="Our Story Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="learn">
+            <h2>Learn Sign Language</h2>
+            <p>Start your journey with these introductory lessons.</p>
+            
+            <div class="video-container">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_1" frameborder="0" allowfullscreen></iframe>
+                    <p>Lesson 1: Basics</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_2" frameborder="0" allowfullscreen></iframe>
+                    <p>Lesson 2: Common Phrases</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_3" frameborder="0" allowfullscreen></iframe>
+                    <p>Lesson 3: Greetings</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id_4" frameborder="0" allowfullscreen></iframe>
+                    <p>Lesson 4: Conversations</p>
+                </div>
+            </div>
+        
+            <div class="announcement">
+                <h3>📢 Coming Soon!</h3>
+                <p>Our app will soon be available for Windows, Mac, and Linux.</p>
+            </div>
+        </section>
+        
+
+        <section id="resources" class="image-container">
+            <h2>Sign Language Alphabet</h2>
+            <p>Here is the sign language alphabet for quick reference:</p>
+            <img src="https://www.handspeak.com/thumbs/alphabet.jpg" alt="Sign Language Alphabet" width="600">
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at <a href="mailto:info@signlanguagelearning.com">info@signlanguagelearning.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn Sign Language. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("language-select").addEventListener("change", function () {
+            alert("Language changed to: " + this.value);
+        });
+    
+        document.getElementById("notification-btn").addEventListener("click", function () {
+            alert("No new notifications.");
+        });
+    
+        document.querySelector(".profile-icon").addEventListener("click", function () {
+            alert("Profile section coming soon!");
+        });
+    </script>
+</body>
+</html>
